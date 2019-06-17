@@ -74,11 +74,11 @@
 }
 
 .yy_title { // 見出しの装飾
-    padding: 1.4em 1.5em; /* 文字の上下 左右の余白 */
+    padding: 2.5em 2.5em; /* 文字の上下 左右の余白 */
     color: #494949; /* 文字色 */
     /* background: #f4f4f4; */ /* 背景色 */
     border-left: solid 7px #7db4e6; /* 左線 */
-    border-bottom: solid 2px #d7d7d7; /* 下線 */
+    border-bottom: solid 1px #d7d7d7; /* 下線 */
 }
 .yy_marker {
     background: linear-gradient(transparent 20%, #ff1493 20%);
@@ -95,7 +95,16 @@
     text-align: right;
     color: #006400;
 }
-
+.yy_text {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 3px #000000;
+}
+.yy_text li {
+    margin: 0; 
+    padding: 0;
+}
 </style>
 
 
@@ -107,50 +116,9 @@
 
         <header class="header">
             <div class="header__content row">
-
 	      <h1 style="color: white;">らく楽ツール</h1>
-
-              <!-- div class="header__logo">
-                    <a class="logo" href="index.html">
-                      <img src="images/Timesale_logo.png" alt="Homepage">
-                    </a>
-                </div --> <!-- end header__logo -->
-
-		<!--
-                <ul class="header__social">
-                    <li>
-                        <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                    </li>
-                </ul> --> <!-- end header__social -->
-
-                <!-- <a class="header__search-trigger" href="#0"></a>
-
-                <div class="header__search">
-
-                    <form role="search" method="get" class="header__search-form" action="#">
-                        <label>
-                            <span class="hide-content">Search for:</span>
-                            <input type="search" class="search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off">
-                        </label>
-                        <input type="submit" class="search-submit" value="Search">
-                    </form>
-        
-                    <a href="#0" title="Close Search" class="header__overlay-close">Close</a>
-
-                </div> -->  <!-- end header__search -->
-
-
-                <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
-
+<!--
+		<a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
                 <nav class="header__nav-wrap">
 
                     <h2 class="header__nav-heading h6">サイト案内</h2>
@@ -163,20 +131,23 @@
                         <li><a href="#SCRIPT" title="">スクリプトについて</a></li>
                         <li><a href="#COST" title="">料金について</a></li>
                         <li><a href="#QUESTION" title="">お問い合わせ</a></li>
-                        <!-- li class="has-children">
+-->
+<!-- 
+			    <li class="has-children">
                             <a href="#0" title="">検索キーワード</a>
                             <ul class="sub-menu">
                             <li><a href="Grad.html">卒業</a></li>
                             <li><a href="Accident.html">事故・火事</a></li>
 			    </ul>
-                        </li -->
-                        <li><a href="about.html" title="">About</a></li -->
-                    </ul> <!-- end header__nav -->
+                        </li>
+-->
+<!-- 
+                    </ul>
 
                     <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
 
-                </nav> <!-- end header__nav-wrap -->
-
+                </nav>
+-->
             </div> <!-- header-content -->
         </header> <!-- header -->
 
@@ -209,10 +180,8 @@
 			    <h2 class="yy_title">このサイトについて</h2>
                         </div>
                         <div class="entry__info">
-			    <ul>
-			        <li>楽天トラベルのサイトにある『懸賞広場』のすべての懸賞への応募を代行します。</li>
-				<li>動作環境をご自身でご用意できる方には、代行ではなくスクリプトをお譲りすることもできます。</li>
-			    </ul>
+			    <div class="yy_text"><li>楽天トラベルのサイトにある『懸賞広場』のすべての懸賞への応募を代行します。</li></div>
+			    <div class="yy_text"><li>動作環境をご自身でご用意できる方には、代行ではなくスクリプトをお譲りすることもできます。</li></div>
                         </div>
                         <div class="entry__excerpt">
                         </div>
@@ -236,12 +205,10 @@
 			    <h2 class="yy_title">注意事項</h2>
                         </div>
                         <div class="entry__info">
-			    <ul>
-			        <li>スクリプト(=マクロのようなもの)は完全に自動で応募します。代行もこちらではスクリプトで自動応募しています。従って楽天IDの利用を停止などされる場合があるかもしれませんが、一切の責任は負いかねます。(そのためにも別の楽天IDの作成を強くお勧めします)</li>
-				<li>懸賞に応募すると、懸賞を出しているお店などからのメルマガが邪魔なくらい配信されますのでご注意下さい。</li>
-				<li>メルマガが邪魔だからといって迷惑メール設定してしまうと当選の連絡メールも届かない場合がございます。その場合の責任も一切負いかねます。</li>
-				<li>お知らせ頂いた楽天ID、パスワードは懸賞広場の申し込み以外には一切利用致しません。</li>
-			    </ul>
+			    <div class="yy_text"><li>スクリプト(=マクロのようなもの)は完全に自動で応募します。代行もこちらではスクリプトで自動応募しています。従って楽天IDの利用を停止などされる場合があるかもしれませんが、一切の責任は負いかねます。(そのためにも別の楽天IDの作成を強くお勧めします)</li></div>
+   			    <div class="yy_text"><li>懸賞に応募すると、懸賞を出しているお店などからのメルマガが邪魔なくらい配信されますのでご注意下さい。</li></div>
+			    <div class="yy_text"><li>メルマガが邪魔だからといって迷惑メール設定してしまうと当選の連絡メールも届かない場合がございます。その場合の責任も一切負いかねます。</li></div>
+			    <div class="yy_text"><li>お知らせ頂いた楽天ID、パスワードは懸賞広場の申し込み以外には一切利用致しません。</li></div>
                         </div>
                         <div class="entry__excerpt">
                         </div>
@@ -265,13 +232,11 @@
 			    <h2 class="yy_title">自動応募の代行について</h2>
                         </div>
                         <div class="entry__info">
-			    <ul>
-			        <li>代行には楽天ID及びパスワードが必要となります。懸賞に応募するためだけのメールアドレスを使って、懸賞応募専用の楽天ID(※①)を作成して頂くことを強くお勧めします。</li>
-				<li>※①を作成される場合は、メールアドレスとしてgmailを取得されることを強くオススメします。あとあと役に立ちます。何の役に立つかはコチラをご覧下さい。</li>
-				<li>懸賞広場の懸賞は、当選するとメールアドレス宛に住所、氏名など懸賞の送付先を尋ねてくるものがほとんどなので、※①の作成時は氏名以外登録する必要ありません。ですからすぐ※①は作成できると思います。</li>
-				<li>とりあえず『本当に懸賞に申し込んでくれるのか怪しい、確認したい』と言う方のためにも、お試しで代行することもできます。※①の楽天IDをお知らせ頂ければ、一部の懸賞(50個ほど)をこちらで適当に選んで申し込みします。申し込み完了メールもしくは懸賞を出しているお店からのメルマガが届けば応募していることをご確認頂けると思います。</li>
-				<li>お試し後、懸賞広場のすべての懸賞応募の代行を申し込む場合はその旨をご連絡頂ければ対応させて頂きます。</li>
-			    </ul>
+			    <div class="yy_text"><li>代行には楽天ID及びパスワードが必要となります。懸賞に応募するためだけのメールアドレスを使って、懸賞応募専用の楽天ID(※①)を作成して頂くことを強くお勧めします。</li></div>
+			    <div class="yy_text"><li>※①を作成される場合は、メールアドレスとしてgmailを取得されることを強くオススメします。あとあと役に立ちます。何の役に立つかはコチラをご覧下さい。</li></div>
+			    <div class="yy_text"><li>懸賞広場の懸賞は、当選するとメールアドレス宛に住所、氏名など懸賞の送付先を尋ねてくるものがほとんどなので、※①の作成時は氏名以外登録する必要ありません。ですからすぐ※①は作成できると思います。</li></div>
+			    <div class="yy_text"><li>とりあえず『本当に懸賞に申し込んでくれるのか怪しい、確認したい』と言う方のためにも、お試しで代行することもできます。※①の楽天IDをお知らせ頂ければ、一部の懸賞(50個ほど)をこちらで適当に選んで申し込みします。申し込み完了メールもしくは懸賞を出しているお店からのメルマガが届けば応募していることをご確認頂けると思います。</li></div>
+			    <div class="yy_text"><li>お試し後、懸賞広場のすべての懸賞応募の代行を申し込む場合はその旨をご連絡頂ければ対応させて頂きます。</li></div>
                         </div>
                         <div class="entry__excerpt">
                         </div>
@@ -295,11 +260,9 @@
 			    <h2 class="yy_title">スクリプト本体について</h2>
                         </div>
                         <div class="entry__info">
-			    <ul>
-			        <li>動作させるには、csh/node.js/puppeteerが必要です。</li>
-				<li>正しく動作するか確認のために、まず楽天にログインするだけのスクリプトをお送りします。それで動作確認をして頂き、無事動作の確認ができましたら応募スクリプト本体をお譲りすることができます。</li>
-				<li>スクリプトに関する質問には必ずお答えしますが、それ以外に関する質問、例えば動作環境やcshまたはnode.jsに関する質問などにはお答えしませんのでご了承願います。</li>
-			    </ul>
+			    <div class="yy_text"><li>動作させるには、csh/node.js/puppeteerが必要です。</li></div>
+			    <div class="yy_text"><li>正しく動作するか確認のために、まず楽天にログインするだけのスクリプトをお送りします。それで動作確認をして頂き、無事動作の確認ができましたら応募スクリプト本体をお譲りすることができます。</li></div>
+			    <div class="yy_text"><li>スクリプトに関する質問には必ずお答えしますが、それ以外に関する質問、例えば動作環境やcshまたはnode.jsに関する質問などにはお答えしませんのでご了承願います。</li></div>
                         </div>
                         <div class="entry__excerpt">
                         </div>
@@ -323,20 +286,20 @@
 			    <h2 class="yy_title">料金について</h2>
                         </div>
                         <div class="entry__info">
-			    <ul>
-			        <li>お支払いはPaypalにて承ります。クレジットカードがご利用できます。</li>
-			        <li>原則はクレカのみですが、それ以外の支払い方法もできる限り相談に応じます。</li>
-				<li>応募代行の場合</li>
-				<li>
+			    <div class="yy_text"><li>お支払いはPaypalにて承ります。クレジットカードがご利用できます。</li></div>
+			    <div class="yy_text"><li>原則はクレカのみですが、それ以外の支払い方法もできる限り相談に応じます。</li></div>
+			    <div class="yy_text"><li>応募代行の場合</li>
+			        <li>
 				    <li>1つの※①の楽天IDにつき300円で、申込時点のすべての懸賞に申し込みます。</li>
-				    <li>複数のIDを取得して申し込もうとしている方には、オプションの検討をおすすめします。オプションの内容はコチラから。</li>
+			            <li>複数のIDを取得して申し込もうとしている方には、オプションの検討をおすすめします。オプションの内容はコチラから。</li>
 				</li>
-				<li>スクリプトの場合</li>
+			    </div>
+			    <div class="yy_text"><li>スクリプトの場合</li>
 				<li>
 				    <li>スクリプトのソースコードは10000円でお譲りします。</li>
 				    <li>将来、懸賞広場のデザイン変更、楽天IDでのログイン方法変更などでスクリプトが動作しなくなってもサポートできかねますのでご了承下さい。</li>
 				</li>
-			    </ul>
+			    </div>
                         </div>
                         <div class="entry__excerpt">
                         </div>
@@ -360,11 +323,9 @@
 			    <h2 class="yy_title">お問い合わせ</h2>
                         </div>
                         <div class="entry__info">
-			    <ul>
-			        <li>お気軽にお問い合わせ下さい。</li>
-				<li>メールアドレスは yamashimo.kあっとgmail.com です。</li>
-				<!-- li>問い合わせではない内容は、こちらの目に止まることなくAIフィルタで即ゴミ箱行きですので、ご承知おき下さい。</li -->
-			    </ul>
+			    <div class="yy_text"><li>お気軽にお問い合わせ下さい。</li></div>
+			    <div class="yy_text"><li>メールアドレスは yamashimo.kあっとgmail.com です。</li></div>
+			    <!-- li>問い合わせではない内容は、こちらの目に止まることなくAIフィルタで即ゴミ箱行きですので、ご承知おき下さい。</li -->
                         </div>
                         <div class="entry__excerpt">
                         </div>
